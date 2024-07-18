@@ -1,0 +1,95 @@
+body {
+  background-image: url(../img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body header h1 {
+  text-align: center;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 50px;
+  background: rgb(252, 224, 191);
+  background: linear-gradient(180deg, rgb(252, 224, 191) 64%, rgba(0, 0, 0, 0) 100%);
+  padding-bottom: 60px;
+}
+body div {
+  background-color: rgba(56, 56, 56, 0.623);
+  padding: 20px 0px 40px 0px;
+  border-radius: 10px;
+}
+body div h2 {
+  text-align: center;
+  color: white;
+}
+body div form label {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 300;
+}
+body div form p {
+  text-align: center;
+  color: white;
+  display: none;
+}
+body div form input {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-self: start;
+}
+body div form #divVIP p {
+  text-align: left;
+  color: white;
+  display: block;
+  font-size: 20px;
+}
+body div h3 {
+  text-align: center;
+  color: white;
+}
+body div form {
+  display: flex;
+  flex-direction: column;
+}
+body div form div label {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 300;
+}
+body div form button {
+  align-self: center;
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+  margin-bottom: 20px;
+}
+body div p {
+  text-align: center;
+  color: white;
+  display: none;
+}
+body div div form button {
+  margin-top: 20px;
+}
+body div div ul li {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 300;
+}
+
+.oculto {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.mi-titulo {
+  color: black;
+}
+
+.mi-texto {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

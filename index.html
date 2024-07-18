@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Horarios</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Use una libreria de animaciones para el titulo de la pagina-->
+        <h1 class="animate__animated animate__fadeInDown">Peluquería La Bartola</h1>
+    </header>
+    <div class="container mt-5">
+        <!--Ingresa info de usuario-->
+        <h2>Ingrese datos para la agenda:</h2>
+        <form id="formAgenda">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre">
+            
+            <label for="contacto">Número de contacto:</label>
+            <input type="number" class="form-control" name="numContacto" id="contacto" >
+            
+            <!--Seleccion de horario-->
+            <h3 class="mb-4">Agenda de Horarios</h3>
+            <div class="form-group">
+                <label for="horario">Seleccione un horario:</label>
+                <select class="form-control" id="horario">
+                    <option value="--">--</option>
+                    <option value="8:00 AM">8:00 AM</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                </select>
+            </div>
+            <!--          VIP            -->
+            <label for="VIP">Cliente VIP?:</label>
+            <input type="checkbox" id="VIP" name="VIPcheck" value="yes">
+            <div class="form-group oculto" id="divVIP">
+                <p>En Peluquería la Bartola tenemos un servicio personalizado para fanaticos de Rick Y Morti. Si sos cliente vip podes elegir que capitulo ver mientras estas en tu turno</p>
+                <label for="capSelect">Capitulo que desea mirar:</label>
+                <select class="form-control" name="capitulos" id="capSelect">
+
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Agendar</button>
+            <p id="oculto">*INGRESE TODOS LOS DATOS*</p>
+        </form>
+
+        <!--Consultar horas agendadas por el usuario-->
+        
+        <p id="horaYaAgendada">*EL HORARIO ELEGIDO NO SE ENCUENTRA DISPONIBLE*</p>
+        <div id="infoUsuario">
+            <h2>Información del Usuario</h2>
+            <form id="formConsulta">
+                <label for="consCont">Número de contacto:</label>
+                <input type="number" class="form-control" id="consCont">
+
+                <button type="submit" class="btn btn-primary">Consultar</button>
+            </form>
+            <h3>Horas Agendadas</h3>
+            <ul id="listaHoras" class="list-group">
+                <!-- Aca se agregan las horas agendadas -->
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/proyectojs.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    background-image: url(../img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    header {
+        h1 {
+            text-align: center;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 50px;
+            background: rgb(252, 224, 191);
+            background: linear-gradient(180deg, rgba(252, 224, 191, 1) 64%, rgba(0, 0, 0, 0) 100%);
+            padding-bottom: 60px;
+        }
+    }
+
+    div {
+        background-color: rgba(56, 56, 56, 0.623);
+        padding: 20px 0px 40px 0px;
+        border-radius: 10px;
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            label {
+                color: aliceblue;
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            p {
+                text-align: center;
+                color: white;
+                display: none;
+            }
+            input{
+                display: flex;
+                width: 20px;
+                height: 20px;
+                align-self: start;
+            }
+            #divVIP{
+                p{
+                    text-align: left;
+                    color: white;
+                    display: block;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                label {
+                    color: aliceblue;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+
+            }
+
+            button {
+                align-self: center;
+                background-color: white !important;
+                color: black !important;
+                border-color: black !important;
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            display: none;
+        }
+
+        div {
+            form {
+                button {
+                    margin-top: 20px;
+                }
+            }
+
+            ul {
+                li {
+                    text-decoration: none;
+                    color: aliceblue;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+.oculto {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.mi-titulo {
+    color: black;
+}
+
+.mi-texto {
+    color: black;
+}
